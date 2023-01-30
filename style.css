@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #C4C4C4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 62px;
+}
+
+.container__form {
+  background: white;
+  width: 100%;
+}
+
+.container__input {
+  height: 61px;
+  width: 100%;
+  border: none;
+  font-size: 48px;
+  padding: 5px 13px;
+}
+
+.container__item-complete {
+  display: none;
+  width: 100%;
+  height: 44px;
+  cursor: default;
+  border-radius: 2px solid #000000;
+  background: #E3E3E3;
+  font-size: 30px;
+  text-align: start;
+  padding: 0 13px;
+}
+
+.container__form--active .container__item-complete {
+  display: block;
+}
+
+.container__item-complete:hover {
+  background: #65CDF9;
+}
+
+.container__list-repositories {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__item-repositories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E27BEB;
+  border: 1px solid #000000;
+  list-style: none;
+  padding: 8px 16px;
+  width: 100%;
+  height: 101px;
+  font-size: 24px;
+}
+
+.container__btn-close {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+  background: url("data:image/svg+xml,%0A%3Csvg width='46' height='42' viewBox='0 0 46 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M44 40.5L2 2' stroke='%23FF0000' stroke-width='4'/%3E%3C/svg%3E") no-repeat 50% 50%,
+              url("data:image/svg+xml,%0A%3Csvg width='46' height='42' viewBox='0 0 46 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 40.5L44 2' stroke='%23FF0000' stroke-width='4'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;
+}
